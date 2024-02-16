@@ -9,6 +9,7 @@ job "hello_world" {
     count = 3
 
     network {
+      mode = "bridge"
       port "http" {
         to = 8000
       }
