@@ -5,6 +5,7 @@ job "demo-webapp" {
     count = 0
 
     network {
+      mode = "bridge"
       port  "http"{
         to = -1
       }
