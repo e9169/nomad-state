@@ -14,6 +14,7 @@ job "podinfo" {
     count = 0
 
     network {
+      mode = "bridge"
       port "http" {
         static = 80
         to = 9898
