@@ -5,6 +5,7 @@ job "webserver" {
   group "webserver" {
     count = 0
     network {
+      mode = "bridge"
       port "http" {
         to = 80
       }
